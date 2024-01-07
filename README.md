@@ -1,3 +1,7 @@
+# Info
+
+This repo contains configuration instructions as well as the explanation of main terms associated with neural networks. README file decribes the theory and the proper .py files concern the pratical part.
+
 # Configuration - connection with GPU
 
 There are some crucial steps you should follow to properly install tensorflow and use CUDA toolkit.
