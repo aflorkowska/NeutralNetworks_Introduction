@@ -28,7 +28,7 @@ print("GPUs Available: ", tf.config.list_physical_devices('GPU'))
 # Recommended materials 
 1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 
-# $${\color{green}Neutral networks}$$
+# ``` diff ! Neutral networks ! ```
 ## Introduction
 ### What are they?
 Neutral network  is a function detecting some pattern in input data. It consists of 3 main parts: input layer (data), hidden layers (magic box responsible for proceesing) and output layer (results). Each layer is built by neurons, that can be also treated as functions. So, neuron takes outputs of all the neurons in previous layer, calculates them by proper, dedicated weights and bias and as the result, spits out a number between 0 and 1 = neuron's activation. In this process, `activation function` plays a crucial role, because they are used to introduce nonlinearity to models, which allows deep learning models to learn nonlinear prediction boundaries. There are many types of activation functions: binary step function, linear and non-linear functions (tahn, sigmoid or relu = the most popular). Output layer has got also activation function - in case of binary prediction sigmoid is chosen, but for multi-class prediciton softmax is the best option.
