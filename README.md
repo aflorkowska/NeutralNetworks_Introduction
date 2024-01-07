@@ -30,7 +30,7 @@ print("GPUs Available: ", tf.config.list_physical_devices('GPU'))
 # Neutral networks - main idea 
 
 ### What are they?
-Network is a function detecting some pattern in input data. It consists of 3 main parts: input layer (data), hidden layers (magic box responsible for proceesing) and output layer (results). Each layer is built by neurons, that can be also treated as functions. So, neuron takes outputs of all the neurons in previous layer, calculates them by proper, dedicated weights and bias and as the result, spits out a number between 0 and 1 = neuron's activation. In this process, neuron's activation function plays a crucial role. There are many types of activation functions: binary step function, linear and non-linear functions (tahn, sigmoid or relu = the most popular). 
+Network is a function detecting some pattern in input data. It consists of 3 main parts: input layer (data), hidden layers (magic box responsible for proceesing) and output layer (results). Each layer is built by neurons, that can be also treated as functions. So, neuron takes outputs of all the neurons in previous layer, calculates them by proper, dedicated weights and bias and as the result, spits out a number between 0 and 1 = neuron's activation. In this process, `activation function` plays a crucial role, because they are used to introduce nonlinearity to models, which allows deep learning models to learn nonlinear prediction boundaries. There are many types of activation functions: binary step function, linear and non-linear functions (tahn, sigmoid or relu = the most popular). Output layer has got also activation function - in case of binary prediction sigmoid is chosen, but for multi-class prediciton softmax is the best option.
 
 In summary the NN is a function that involves parameters in form of weights and biases. Each layern tries to extract specific features. For examples, when it comes to images: the first few layers focuses on a details like edges, corners and curvers, but the last few layers detects more general features - the domimant objects. From particular to general.
 
@@ -40,6 +40,12 @@ In a nutshell, a NN learning is a process of finding the right weights and biase
 `Gradient decent algorithm` helps to figure out what is the downhill direction. This direction is the negative of the gradient of the cost function, and its lenght is a indicator of the slope's steepness. So the training process consists of calculating gradient, taking a small step downhill (its is determined by `learning rate` hyperparameter) and just repeating that over and over. It is a way to converge towards some local minimum of a cost function. Another important thing to know is that the magnitude of each component of calculated gradient vector tells how sensitive the cost function is to each weight and bias. Unfortunatelly,  our loss function usually has various local minima, which can missguide the model. In order to prevent it, we can manually monitor and fix learnig rate parameter - but it is impossible. That is why we should set the `optimizer` paramater that does this for us. It optimizes the learning rate automatically to avoid entering a local minimum and is also responsible for fastening the optimization process. The most popular optimizers are Adam, RMS prop, Adagrad. 
 
 After training model, you show it more labeled data (testing data), that it has never seen before. Then you can see how accurately the model classifies those images.
+
+There are also other important hyperparameters of the model training process, affecting both the accuracy and computational efficiency of the training process.
+- `number of hidden layers`
+- `momentum` - helps to prevent oscillations, indicate how many gradients from the past (history) are considered (higher momentum value means more).
+- `number of epochs` - determines how many times the model will see the entire training data before completing training.
+- `batch_size` - represents the number of samples used in one forward and backward pass through the network. It can be understood as a trade-off between accuracy and speed. 
 
 # Common issues
 ### Imbalanced data
