@@ -2,15 +2,16 @@
 import os
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
-# Sequential vs Functional API
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.utils import plot_model
 
+numberOfInputs = 784 #because image size equal to 28x28 pixels
+
 # Sequential API (Very convenient, not very flexible)
 modelA = keras.Sequential(
    [
-       keras.Input(shape=(28 * 28)),
+       keras.Input(shape=(numberOfInputs)),
        layers.Dense(512, activation="relu"),
        layers.Dense(256, activation="relu"),
        layers.Dense(10),
@@ -18,13 +19,13 @@ modelA = keras.Sequential(
 )
 
 modelB = keras.Sequential()
-modelB.add(keras.Input(shape=(784)))
+modelB.add(keras.Input(shape=(numberOfInputs)))
 modelB.add(layers.Dense(512, activation="relu"))
 modelB.add(layers.Dense(256, activation="relu", name="my_layer"))
 modelB.add(layers.Dense(10))
 
 # Functional API (A bit more flexible, allowing for more complex models with multiple inputs or outputs, shared layers, and non-linear flows)
-inputs = keras.Input(shape=(784))
+inputs = keras.Input(shape=(numberOfInputs))
 xA = layers.Dense(512, activation="relu", name="first_layer")(inputs)
 xA = layers.Dense(256, activation="relu", name="second_layer")(xA)
 xB = layers.Dense(128, activation="relu", name="third_layer")(xA)
