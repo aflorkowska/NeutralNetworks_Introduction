@@ -6,7 +6,7 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.utils import plot_model
 
-numberOfInputs = 784 #because image size equal to 28x28 pixels
+numberOfInputs = 784 #because image size equals to 28x28 pixels
 
 # Sequential API (Very convenient, not very flexible)
 modelA = keras.Sequential(
