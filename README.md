@@ -1,9 +1,8 @@
-# Getting started
+# GETTING STARTED
 
 This repo contains configuration instruction as well as the explanation of main terms associated with neural networks. README file decribes the theory and the proper .py files concern the pratical part.
 
-# Configuration - connection with GPU
-
+### Configuration - connection with GPU
 There are some crucial steps you should follow to properly install tensorflow and use CUDA toolkit.
 
 1. Check compute capability for your GPU - [website](https://developer.nvidia.com/cuda-gpus).
@@ -25,13 +24,7 @@ print("GPUs Available: ", tf.config.list_physical_devices('GPU'))
 ```
 [Source](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1)
 
-# Recommended materials 
-1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
-# Neutral networks
+# NEUTRAL NETWORKS
 ## Introduction
 ### What are they?
 Neutral network  is a function detecting some pattern in input data. It consists of 3 main parts: input layer (data), hidden layers (magic box responsible for proceesing) and output layer (results). Each layer is built by neurons, that can be also treated as functions. So, neuron takes outputs of all the neurons in previous layer, calculates them by proper, dedicated weights and bias and as the result, spits out a number between 0 and 1 = neuron's activation. In this process, `activation function` plays a crucial role, because they are used to introduce nonlinearity to models, which allows deep learning models to learn nonlinear prediction boundaries. There are many types of activation functions: binary step function, linear and non-linear functions (tahn, sigmoid or relu = the most popular). Output layer has got also activation function - in case of binary prediction sigmoid is chosen, but for multi-class prediciton softmax is the best option.
@@ -61,41 +54,17 @@ In ideal scenario the data are balanced. Unfortunatelly, there is usually a prob
 
 ### Underfitting
 
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
-# Convolutional Neutral Networks
+# CONVOLUTIONAL NEUTRAL NETWORKS
 
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
+# RECURRENT NEUTRAL NETWORKS
 
-# Recurrent Neutral Networks
+# TRANSFER LEARNING
 
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
+# FINE TUNING
 
-# Transfer Learning 
+# VISION TRANSFORMERS
 
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
+# VISION GRAPH NEUTRAL NETWORKS
 
-# Fine tuning 
-
- ```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
-
-# Vision Transformers
-
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
-
-# Vision Graph Neutral Networks
-
-```diff
-! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```
+# RECOMMENDED MATERIALS 
+1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
