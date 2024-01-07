@@ -34,15 +34,12 @@ Network is a function detecting some pattern in input data. It consists of 3 mai
 
 In summary the NN is a function that involves parameters in form of weights and biases. Each layern tries to extract specific features. For examples, when it comes to images: the first few layers focuses on a details like edges, corners and curvers, but the last few layers detects more general features - the domimant objects. From particular to general.
 
-
 ### How do they learn? 
 In a nutshell, a NN learning is a process of finding the right weights and biases. It is done by cost function, telling the model wheather it perfoms correctly or not. The cost of a single training example is calculated by the square of difference of network's outputs and the expected values. The goal is to minimalize the cost function, by changing weights of each hidden layer. It is done by gradient decent method. 
 
-Gradient decent optimaliation algorithm helps to figure out what is the downhill direction. This direction is the negative of the gradient of the cost function, and its lenght is a indicator of the slope's steepness. So the training process consists of calculating gradient, taking a small step downhill (updating weights) and just repeating that over and over. It is a way to converge towards some local minimum of a cost function. Another important thing to know is that the magnitude of each component of calculated gradient vector tells how sensitive the cost function is to each weight and bias. 
-```
-Back propagation 
-The most efficient method for computing gradient is back-propagation. The weights of the network connections are repeatedly adjusted to minimize the difference between the actual output vector of the net and the desired output vector.
-```
+`Gradient decent` optimaliation algorithm helps to figure out what is the downhill direction. This direction is the negative of the gradient of the cost function, and its lenght is a indicator of the slope's steepness. So the training process consists of calculating gradient, taking a small step downhill (updating weights) and just repeating that over and over. It is a way to converge towards some local minimum of a cost function. Another important thing to know is that the magnitude of each component of calculated gradient vector tells how sensitive the cost function is to each weight and bias. 
+
+In summary, `Back propagation algorithm` is the most efficient method for computing gradient. The weights of the network connections are repeatedly adjusted to minimize the difference between the actual output vector of the net and the desired output vector.
 
 After training model, you show it more labeled data (testing data), that it has never seen before. Then you can see how accurately the model classifies those images.
 
@@ -53,6 +50,9 @@ In ideal scenario the data are balanced. Unfortunatelly, there is usually a prob
 ### Overfitting 
 
 ### Underfitting
+
+# Metrics
+There are several metrics helping in performance model assesment. Depending on task type (classification, segmentation), you should conclude based on proper indicator(s).
 
 # Convolutional Neutral Networks
 
