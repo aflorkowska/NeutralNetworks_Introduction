@@ -40,12 +40,12 @@ In a nutshell, a NN learning is a process of finding the right weights and biase
 
 `Gradient decent algorithm` helps to figure out what is the downhill direction. This direction is the negative of the gradient of the cost function, and its lenght is a indicator of the slope's steepness.  Moreover, the magnitude of each component of calculated gradient vector tells how sensitive the cost function is to each weight and bias. The training process consists of calculating gradient, taking a small step downhill and just repeating that over and over. In this process, there are three main meaningful hyperparameters: `learning rate` controls the rate or speed at which the model learns = the amount of apportioned error that the weights of the model are updated, `momentum` helps to prevent oscillations, indicates how many gradients from the past are considered (higher = more), and `decay` adjusts learning rate (lr) per iterations according to equation, simpilfied one `lr = lr * (1. / (1. + decay * iterations))`. Definitely, it is a way to converge towards some local minimum of a cost function. Unfortunatelly,  our loss function usually has various local minima, which can missguide the model. In order to prevent it, we can manually monitor and fix learning rate parameter - but it is impossible. That is why we should set the `optimizer` parameter that does this for us. It optimizes the learning rate automatically to avoid entering a local minimum and is also responsible for fastening the optimization process. The most popular optimizers are Adam, RMS prop, Adagrad. 
 
-After training model, you show it more labeled data (testing data), that it has never seen before. Then you can see how accurately the model classifies those images.
-
 There are also other important hyperparameters of the model training process, affecting both the accuracy and computational efficiency of the training process.
 - `number of hidden layers` - one of the indicators of model complexity.
 - `number of epochs` - determines how many times the model will see the entire training data before completing training.
-- `batch_size` - represents the number of samples used in one forward and backward pass through the network. It can be understood as a trade-off between accuracy and speed. 
+- `batch_size` - represents the number of samples used in one forward and backward pass through the network. It can be understood as a trade-off between accuracy and speed.
+
+After training model, you show it more labeled data (testing data), that it has never seen before. Then you can see how accurately the model classifies those images.
 
 # Common issues
 ### Imbalanced data
