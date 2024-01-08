@@ -6,7 +6,7 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.utils import plot_model
 
-numberOfInputs = 784 #because image size equals to 28x28 pixels
+numberOfInputs = 784 # depends on input data
 
 # Sequential API (Very convenient, not very flexible)
 modelA = keras.Sequential(
@@ -33,10 +33,10 @@ outputsA = layers.Dense(10, activation="softmax")(xA)
 outputsB = layers.Dense(10, activation="softmax")(xB)
 modelC = keras.Model(inputs=inputs, outputs=[outputsA, outputsB])
 
+##############################################################################
+
 print(modelB.summary())
-plot_model(modelB, to_file='Sequential.png', show_shapes=False, show_dtype=False,
-show_layer_names=True, rankdir='TB', expand_nested=False, dpi=300)
+plot_model(modelB, to_file='Sequential.png', show_shapes=False, show_dtype=False, show_layer_names=True, rankdir='TB', expand_nested=False, dpi=300)
 
 print(modelC.summary())
-plot_model(modelC, to_file='Functional.png', show_shapes=False, show_dtype=False,
-show_layer_names=True, rankdir='TB', expand_nested=False, dpi=300)
+plot_model(modelC, to_file='Functional.png', show_shapes=False, show_dtype=False, show_layer_names=True, rankdir='TB', expand_nested=False, dpi=300)
