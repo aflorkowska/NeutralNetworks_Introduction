@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29b3a740-4d79-4ea5-955a-a54ee2cebfd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BasicsNN/BasicsOfNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicsNN/plotMethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicsNN/SequencialVSFunctionalAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicsNN/SequencialVSFunctionalAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicsNN/BasicsOfNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicsNN/BasicsOfNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicsNN/plotMethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicsNN/plotMethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/CNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     "Python.BasicsOfNN.executor": "Run",
     "Python.SequencialVSFunctionalAPI.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.plotMethods.executor": "Run",
+    "Python.plotMethods.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
