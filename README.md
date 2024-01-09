@@ -26,3 +26,5 @@ print("GPUs Available: ", tf.config.list_physical_devices('GPU'))
 ## :books: Recommended materials 
 1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 2. [Lectures by Professor Adrian Horzyk, AGH University of Science and Technology, Cracow Poland](https://home.agh.edu.pl/~horzyk/lectures/kbcidmb/)
+
+Created by Agnieszka Florkowska, 2024
