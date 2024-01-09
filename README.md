@@ -1,9 +1,8 @@
-# Getting started
-
+## :star: Getting started
 This repo contains configuration instruction as well as the explanation of main terms associated with neural networks. README files (seperate for each topic) decribe the theory and the proper .py files concern the pratical part.
 
 Content: basics of NN, CNN, RNN, Transfer learning and fine tuning, vision transformers, as well as graph vision NN. 
-## Configuration - connection with GPU
+### :computer: Configuration - connection with GPU
 There are some crucial steps you should follow to properly install tensorflow and use CUDA toolkit - [source](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1).
 
 1. Check compute capability for your GPU - [website](https://developer.nvidia.com/cuda-gpus).
@@ -24,3 +23,6 @@ print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 print("GPUs Available: ", tf.config.list_physical_devices('GPU'))
 ```
 
+## :books: Recommended materials 
+1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+2. [Lectures by Professor Adrian Horzyk, AGH University of Science and Technology, Cracow Poland](https://home.agh.edu.pl/~horzyk/lectures/kbcidmb/)
