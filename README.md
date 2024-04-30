@@ -1,9 +1,23 @@
 ## :star: Getting started
-This repo contains configuration instruction as well as the explanation of main terms associated with neural networks. README files (seperate for each topic) decribe the theory and the proper .py files concern the pratical part.
+This repo contains the explanation of main terms associated with neural networks and consists of two parts. Tn folder "Theory", there are notebooks with the describtions of the following topics, but the practical tasks and examples of use you can find in folder "Exercises".
 
-Content: basics of NN, CNN, RNN, Transfer learning and fine tuning, vision transformers, as well as graph vision NN. 
+This repo was created as I wanted to improve my deep learninng skills with use of PyTorch library and better understand the math behind these topics. I have relied on the PyTorch tutorial from this website: https://github.com/mrdbourke/pytorch-deep-learning/
+
+THEORY FOLDER - content:
+1. Basics of NN.
+2. RNN.
+3. CNN.
+4. Transfer learning and fine tuning.
+5. Transformers, including vision transformers.
+6. Graph vision NN.
+
+EXERCISES - content:
+ 
 ### :computer: Configuration - connection with GPU
-There are some crucial steps you should follow to properly install tensorflow and use CUDA toolkit - [source](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1).
+
+PYTORCH
+
+TENSORFLOW - [Recommended tutorial](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1).
 
 1. Check compute capability for your GPU - [website](https://developer.nvidia.com/cuda-gpus).
 2. Download and install specific driver for your GPU - [website](https://www.nvidia.com/Download/index.aspx).
@@ -26,5 +40,7 @@ print("GPUs Available: ", tf.config.list_physical_devices('GPU'))
 ## :books: Recommended materials 
 1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 2. [Lectures by Professor Adrian Horzyk, AGH University of Science and Technology, Cracow Poland](https://home.agh.edu.pl/~horzyk/lectures/kbcidmb/)
+3. PyTorch tutorial: https://github.com/mrdbourke/pytorch-deep-learning/
+
 
 Created by Agnieszka Florkowska, 2024
