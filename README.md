@@ -25,8 +25,8 @@ In order to install PyTorch library I followed the instructions from this [tutor
 4. Run as administrator (everytime!) `Anaconda Promt` window.
 5. Create new enviroment for deep learning using command `conda create --name torch_gpu`
 6. Download and install PyTroch using proper conda command [website](https://pytorch.org/).
-7. Download and install CUDA from NVIDIA's [website](https://developer.nvidia.com/cuda-12-1-0-download-archive).
-8. Download Cudnn from NVIDIA's [website](https://developer.nvidia.com/rdp/cudnn-archive) and extract Cudnn zip. file. Then select all, copy and paste it in the directory of CUDA.
+7. Download and install CUDA from NVIDIA's [website](https://developer.nvidia.com/cuda-12-1-0-download-archive) - version 12.1.
+8. Download Cudnn from NVIDIA's [website](https://developer.nvidia.com/rdp/cudnn-archive) and extract Cudnn zip. file. Then select all, copy and paste it in the directory of CUDA - version 8.9.7.
 6. Download and install PyCharm, Community Edition  - [website](https://www.jetbrains.com/pycharm/download/) - Do not forget to run .exe file as administrator.
 7. Set proper Python interpreter.
 ```
@@ -42,6 +42,7 @@ if torch.cuda.is_available():
 else:
     print("Cuda Can't be found")
 ```
+
 
 ## :books: Recommended materials 
 1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
