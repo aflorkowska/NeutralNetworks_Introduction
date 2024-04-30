@@ -1,10 +1,9 @@
 # :star: Getting started
 This repo contains an explanation of the main terms associated with neural networks and consists of two parts. In the folder  "Theory", there are notebooks with the descriptions of the following topics, but the practical tasks and examples of use you can find in the folder "Exercises".
 
-This repo was created as I wanted to improve my deep learning skills with the use of the PyTorch library and better understand the math behind these topics. I have relied on the PyTorch tutorial from this website: https://github.com/mrdbourke/pytorch-deep-learning/
+This repo was created as I wanted to improve my deep learning skills with the use of the PyTorch library and better understand the math behind these topics. I have relied on the PyTorch tutorial from this [website](https://github.com/mrdbourke/pytorch-deep-learning/).
 
-### Content
-Theory explanation:
+### Theory explanation - content
 1. Basics of NN.
 2. RNN.
 3. CNN.
@@ -12,12 +11,12 @@ Theory explanation:
 5. Transformers, including vision transformers.
 6. Graph vision NN.
 
-Exercises:
+### Exercises - content
 1.
  
 ## :computer: Configuration - connection with GPU
 
-In order to install PyTorch library I followed the instructions from this [tutorial](https://medium.com/@harunijaz/a-step-by-step-guide-to-installing-cuda-with-pytorch-in-conda-on-windows-verifying-via-console-9ba4cd5ccbef). If you want to get familiar with Tensorflow, I recommend to check this [tutorial](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1) out.
+In order to install PyTorch library I followed the instructions from this [tutorial](https://medium.com/@harunijaz/a-step-by-step-guide-to-installing-cuda-with-pytorch-in-conda-on-windows-verifying-via-console-9ba4cd5ccbef). If you want to install Tensorflow GPU, I recommend to check this [tutorial](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1) out.
 
 1. Check compute capability for your GPU - [website](https://developer.nvidia.com/cuda-gpus).
 2. Download and install specific driver for your GPU - [website](https://www.nvidia.com/Download/index.aspx).
