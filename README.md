@@ -14,7 +14,7 @@ This repo was created as I wanted to improve my deep learning skills with the us
 ### Exercises - content
 1.
  
-## :computer: Configuration - connection with GPU
+# :computer: Configuration - connection with GPU
 
 In order to install PyTorch library I followed the instructions from this [tutorial](https://medium.com/@harunijaz/a-step-by-step-guide-to-installing-cuda-with-pytorch-in-conda-on-windows-verifying-via-console-9ba4cd5ccbef). If you want to install Tensorflow GPU, I recommend to check this [tutorial](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=1) out.
 
@@ -43,7 +43,7 @@ else:
 ```
 
 
-## :books: Recommended materials 
+# :books: Recommended materials 
 1. [Mathematical explanation of neutral networks, what they are, how they learn by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 2. [Lectures by Professor Adrian Horzyk, AGH University of Science and Technology, Cracow Poland](https://home.agh.edu.pl/~horzyk/lectures/kbcidmb/)
 3. PyTorch tutorial: https://github.com/mrdbourke/pytorch-deep-learning/
